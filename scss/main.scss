@@ -57,3 +57,36 @@ textarea:focus,
 button:focus {
     outline: none;
 }
+
+
+body {
+	text-align:center;
+	font-family:arial;
+	line-height:1.6;
+}
+h1, h2 {
+	font-size:2rem;
+	margin:1.2rem;
+}
+section {
+	padding:3rem 2rem;
+	&.leader {
+
+	}
+}
+.app {
+	section {
+		p {
+			margin:2rem 0;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
