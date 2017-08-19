@@ -25,7 +25,7 @@ class HomePage extends React.Component {
     }
     render() {
         let styles = {
-            
+
             hero: {
                 background: this.props.country.colors.one,
                 padding: `5rem 2rem`,
@@ -41,14 +41,19 @@ class HomePage extends React.Component {
             leader: {
                 background: this.props.country.colors.two,
                 color: this.props.country.colors.three
+            },
+            main: {
+                fontFamily:'Impact',
+                fontSpacing: '1.2px'
+
             }
         }
 
         let country = this.props.country;
         return (
-            <div id="homePage">
+            <div id="homePage" style={styles.main}>
                 <DocumentMeta {...meta.homePage} />
-                <div className="app">
+                <div className="app" >
                     <header className="hero" style={styles.hero}>
                         <h1>{country.title}</h1>
                         <img src='/images/flags/usa.png' className="country-flag" alt="flag" style={styles.hero.flag} />
