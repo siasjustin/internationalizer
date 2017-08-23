@@ -8,11 +8,13 @@
     "dev": "NODE_ENV=dev webpack -d --watch",
     "build": "NODE_ENV=prod webpack -p & npm start",
     "server": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build:langs": "babel scripts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "accept-language": "^3.0.17",
     "babel-core": "^6.22.1",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.2.10",
@@ -36,7 +38,7 @@
     "has-flag": "^2.0.0",
     "imports-loader": "^0.7.1",
     "is-utf8": "^0.2.1",
-    "json-loader": "^0.5.4",
+    "js-cookie": "^2.1.4",
     "mongoose": "4.1.9",
     "node-sass": "^4.5.0",
     "nodemailer": "^4.0.1",
@@ -48,6 +50,8 @@
     "react-document-meta": "^2.1.2",
     "react-dom": "^15.4.2",
     "react-html-parser": "^1.0.3",
+    "react-i18next": "^5.0.0",
+    "react-intl": "^2.3.0",
     "react-redux": "^5.0.2",
     "react-router": "^3.0.2",
     "react-router-redux": "^4.0.8",
